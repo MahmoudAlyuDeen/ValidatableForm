@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ValidatableFormSample</string>
+    <string name="hint_login_username">User name</string>
+    <string name="hint_login_password">Password</string>
+    <string name="helper_login_username">At least 4 characters, only letters and numbers allowed</string>
+    <string name="helper_login_password">6 characters or more, at least 1 number and 1 lowercase letter</string>
+    <string name="checkbox_login_terms">I agree to the terms, conditions, and privacy policy.</string>
+    <string name="button_login_login">Login</string>
+</resources>

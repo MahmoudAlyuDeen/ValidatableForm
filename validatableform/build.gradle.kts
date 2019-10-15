@@ -57,8 +57,8 @@ buildscript {
         set("siteUrl", "https://github.com/MahmoudAlyuDeen/validatableform")
         set("gitUrl", "https://github.com/MahmoudAlyuDeen/validatableform.git")
 
-        set("libraryVersion", "1.0.0")
-        set("libraryVersionCode", 1)
+        set("libraryVersion", "1.0.1")
+        set("libraryVersionCode", 2)
 
         set("developerId", "mahmoudalyudeen")
         set("developerName", "Mahmoud AlyuDeen")

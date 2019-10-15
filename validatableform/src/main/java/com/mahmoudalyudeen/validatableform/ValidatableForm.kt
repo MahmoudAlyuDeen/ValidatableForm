@@ -1,6 +1,8 @@
 package com.mahmoudalyudeen.validatableform
 
 import androidx.databinding.BaseObservable
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 
 /**
  * Represents a form filled by user input that has a live [valid] state.
@@ -54,6 +56,11 @@ abstract class ValidatableForm : BaseObservable() {
 
         private val _validator = validator
 
+        /** The value of the field wrapped in a [LiveData] to allow observing and mapping */
+        private val _valueLive = MutableLiveData<T>(initialValue)
+        val valueLive: LiveData<T>
+            get() = _valueLive
+
         /**
          * The value of the field, with a private backing property to control modification.
          *
@@ -68,6 +75,7 @@ abstract class ValidatableForm : BaseObservable() {
                 synchronized(this) {
                     _value = value
                     _valid = _validator(value)
+                    _valueLive.value = value
                 }
                 this@ValidatableForm.validateFields()
             }

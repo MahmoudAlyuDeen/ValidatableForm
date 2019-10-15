@@ -93,7 +93,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/simple_padding_medium"
                     android:enabled="@{loginViewModel.loginForm.valid}"
-                    android:text="@string/button_login_login"
+                    android:hint="@string/button_login_login"
+                    android:text="@{loginViewModel.loginText}"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
                     android:theme="@style/Widget.MaterialComponents.Button"
                     tools:enabled="true" />

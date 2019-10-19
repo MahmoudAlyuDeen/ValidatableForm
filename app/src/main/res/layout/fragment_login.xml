@@ -28,14 +28,13 @@
                 android:padding="@dimen/simple_padding_large">
 
                 <Space
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/simple_padding_small"
                     app:field="@{loginViewModel.loginForm.username}"
                     app:fieldHelper="@{@string/helper_login_username}">
 
@@ -52,10 +51,13 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simple_padding_large" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/simple_padding_small"
                     app:field="@{loginViewModel.loginForm.password}"
                     app:fieldHelper="@{@string/helper_login_password}"
                     app:passwordToggleEnabled="true">
@@ -74,14 +76,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Space
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/simple_padding_medium"
+                    android:layout_margin="@dimen/simple_padding_tiny"
                     android:checked="@{loginViewModel.loginForm.agreeTos.value}"
                     android:onClick="@{()->loginViewModel.onTermsOfServiceAgreeToggled()}"
                     android:text="@string/checkbox_login_terms"
@@ -92,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/simple_padding_medium"
-                    android:enabled="@{loginViewModel.loginForm.valid}"
+                    android:enabled="@{loginViewModel.loginForm.valid}" 
                     android:hint="@string/button_login_login"
                     android:text="@{loginViewModel.loginText}"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Button"

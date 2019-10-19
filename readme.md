@@ -29,6 +29,19 @@ Validate Forms on Android Without Losing Your Mind
 
 <https://www.youtube.com/watch?v=SMSCVwfZsc4>
 
+# Add to your project
+
+#### Kotlin
+
+```kotlin
+implementation("com.github.mahmoudalyudeen:validatableform:1.0.1")
+```
+
+#### Groovy
+```
+implementation 'com.github.mahmoudalyudeen:validatableform:1.0.1'
+```
+
 # Quick usage
 
 ## Field
@@ -189,4 +202,4 @@ Like the example app, you can create a binding adapter to set the helper text or
 
 #### HelperText Example
 
-[app/src/main/java/com/mahmoudalyudeen/sample/ui/login/LoginBindingAdapters.kt](LoginBindingAdapters.kt)
+[https://github.com/MahmoudAlyuDeen/ValidatableForm/blob/master/app/src/main/java/com/mahmoudalyudeen/sample/ui/login/LoginBindingAdapters.kt](LoginBindingAdapters.kt)

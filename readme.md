@@ -202,4 +202,4 @@ Like the example app, you can create a binding adapter to set the helper text or
 
 #### HelperText Example
 
-[https://github.com/MahmoudAlyuDeen/ValidatableForm/blob/master/app/src/main/java/com/mahmoudalyudeen/sample/ui/login/LoginBindingAdapters.kt](LoginBindingAdapters.kt)
+[LoginBindingAdapters](https://github.com/MahmoudAlyuDeen/ValidatableForm/blob/master/app/src/main/java/com/mahmoudalyudeen/sample/ui/login/LoginBindingAdapters.kt)
